@@ -99,7 +99,7 @@ export default function BatteryModuleProject() {
           <div className="flex flex-col md:flex-row gap-6 items-start">
             <div className="flex-1">
               <p className="mb-0 text-gray-800">
-                As a mechanical design member for the University of Waterloo's battery workforce challenge team, I worked on the conceptual and design stage of developing the battery module.The challenge is across multiple universities, with the goal of developing an efficient battery pack capable of powering a Stellantis vehicle. Ultimately I was in charge of designing the module, cell holder, serpentine tubing and material selection based on competition guidelines.
+                As a mechanical design member for the University of Waterloo&apos;s battery workforce challenge team, I worked on the conceptual and design stage of developing the battery module. The challenge is across multiple universities, with the goal of developing an efficient battery pack capable of powering a Stellantis vehicle. Ultimately I was in charge of designing the module, cell holder, serpentine tubing and material selection based on competition guidelines.
               </p>
             </div>
             {/* Slideshow for What is it? */}

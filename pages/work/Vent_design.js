@@ -171,7 +171,7 @@ export default function VentDesignProject() {
               I had to 3D design the current coater assembly using Solidworks. This involved reverse engineering the assembly and measuring the parts to create an official BOM.
             </li>
             <li>
-              Calculated and modeled possible venting routes using <b>bernoulli's principles</b> and <b>CFD simulations</b>. Ensuring factors such as cost, area constraints and friction factor are correctly addressed based on common HVAC design protocol.
+              Calculated and modeled possible venting routes using <b>bernoulli&apos;s principles</b> and <b>CFD simulations</b>. Ensuring factors such as cost, area constraints and friction factor are correctly addressed based on common HVAC design protocol.
             </li>
 
           </ul>
