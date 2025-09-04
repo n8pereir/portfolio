@@ -5,7 +5,7 @@ import Header from "../../components/Header";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function battery_moduleProject() {
+export default function BatteryModuleProject() {
   const router = useRouter();
   // Slideshow images for "What is it?"
   const whatImages = [
