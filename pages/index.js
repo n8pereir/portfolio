@@ -69,7 +69,7 @@ function HeroSlideshow({ images, current }) {
       style={{
         position: "absolute",
         top: "7rem",
-        right: "3rem",
+        right: "2.5rem",
         width: "45%",
         height: "80vh",
         borderRadius: "2em",
@@ -81,6 +81,7 @@ function HeroSlideshow({ images, current }) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        marginLeft: "2rem",
       }}
     >
       {images.map((img, idx) => {
