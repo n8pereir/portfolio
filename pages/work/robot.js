@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function battery_moduleProject() {
+export default function RobotProject() {
   const router = useRouter();
   const handleWorkScroll = () => {
     router.push('/?scrollTo=work');

@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function engineagvproject() {
+export default function EngineAgvProject() {
   const router = useRouter();
   const handleWorkScroll = () => {
     router.push('/?scrollTo=work');
