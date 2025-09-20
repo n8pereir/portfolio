@@ -7,7 +7,7 @@ const Resume = () => {
       <Header />
       <div className="flex justify-center items-center w-full min-h-screen bg-gray-100">
         <iframe
-          src="/files/Nathan_Pereira_Resume_2025.pdf"
+          src="/files/Nathan_Pereira_Resume_2025_09.pdf"
           title="Nathan Pereira Resume"
           width="80%"
           height="900px"

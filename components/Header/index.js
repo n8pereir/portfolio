@@ -58,7 +58,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog, handleContactScro
                   <Button onClick={() => goToHomeAndScroll("about")}>About</Button>
                   {showResume && (
                     <Button
-                      onClick={() => window.open('/files/Nathan_Pereira_Resume_2025.pdf', '_blank')}
+                      onClick={() => window.open('/files/Nathan_Pereira_Resume_2025_09.pdf', '_blank')}
                     >
                       Resume
                     </Button>
