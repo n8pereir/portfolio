@@ -4,6 +4,7 @@ function useIsDesktop() {
   const [isDesktop, setIsDesktop] = useState(true);
   useEffect(() => {
     function handleResize() {
+      // Show slideshow on screens 1280px and above
       setIsDesktop(window.innerWidth >= 1280);
     }
     handleResize();
@@ -368,8 +369,8 @@ function Home() {
               </div>
 
               {/* My Engineering Journey Timeline Section */}
-              <section className="w-full flex flex-col items-center mt-40 mb-20">
-                <h2 className="text-3xl laptop:text-4xl font-bold text-black mb-10">
+              <section className="w-full flex flex-col items-center mt-40 mb-20 journey-section">
+                <h2 className="text-3xl laptop:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-black mb-10">
                   My Engineering Journey
                 </h2>
                 
