@@ -271,6 +271,7 @@ export default function lidar_project() {
                   ))}
                 </div>
               )}
+          </div>
             </div>
         </section>
 
