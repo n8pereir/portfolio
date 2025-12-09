@@ -91,27 +91,28 @@ export default function lidar_project() {
   const nextWhatSlide = () =>
     setWhatSlide((whatSlide + 1) % whatImages.length);
     
-    // Helper component for PDF slides
+    // Helper component for PDF slides (clip browser PDF chrome, no scroll)
     const PdfSlide = ({ src, alt }) => (
-        <object 
-            data={src} 
-            type="application/pdf" 
-            width="100%" 
-            height="350px"
-            className="rounded-lg shadow-md w-full h-auto max-h-[80vh] object-contain"
-            style={{ background: '#fff' }}
+      <div className="w-full h-[90vh] max-h-[90vh] bg-white rounded-lg overflow-hidden">
+        <object
+          data={src}
+          type="application/pdf"
+          scrolling="no"
+          className="block w-full border-0 outline-none"
+          style={{ border: 'none', display: 'block', transform: 'translateY(-48px)', height: 'calc(100% + 48px)', overflow: 'hidden' }}
         >
-            <p className="text-gray-500">
-                {`Image of ${alt}`} - Your browser does not support inline PDFs.
-                <a href={src.split('#')[0]} target="_blank" rel="noopener noreferrer" className="text-blue-500">View PDF</a>
-            </p>
+          <p className="text-gray-500 m-4">
+            {`Image of ${alt}`} - Your browser does not support inline PDFs.
+            <a href={src.split('#')[0]} target="_blank" rel="noopener noreferrer" className="text-blue-500 ml-2">View PDF</a>
+          </p>
         </object>
+      </div>
     );
 
   return (
     <>
       <Head>
-        <title>LiDAR Mounts - Engineering Project</title>
+        <title>Cadillac Lyriq LiDAR Integration</title>
       </Head>
   <Header handleWorkScroll={handleWorkScroll} handleContactScroll={handleContactScroll} />
 
@@ -119,7 +120,7 @@ export default function lidar_project() {
       <div
         className="relative w-full h-64 md:h-96 flex items-center justify-center bg-gray-900"
         style={{
-          backgroundImage: "url('/images/lidar_sensor.jpg')", // Placeholder for a relevant image
+          backgroundImage: "url('/images/Lidar/car_pic.jpg')", // Placeholder for a relevant image
           backgroundAttachment: "fixed",
           backgroundPosition: "top center",
           backgroundRepeat: "no-repeat",
@@ -129,7 +130,7 @@ export default function lidar_project() {
         <div className="absolute inset-0 w-full h-full bg-black opacity-60"></div>
         <div className="relative z-10 flex flex-col items-center w-full">
           <h1 className="text-white text-3xl md:text-5xl font-extrabold text-center drop-shadow-lg">
-            LiDAR Mounts for UWAFT's Cadillac Lyriq
+            Cadillac Lyriq LiDAR Integration
           </h1>
         </div>
       </div>
@@ -145,7 +146,7 @@ export default function lidar_project() {
             <span className="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Vibration Analysis</span>
             <span className="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">CAD Modeling (Siemens NX)</span>
             <span className="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Additive Manufacturing (3D Printing)</span>
-                <span className="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Aesthetics & Vehicle Integration</span>
+                <span className="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Industrial Design & Vehicle Integration</span>
                 <span className="bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">Project Management</span>
           </div>
         </section>
@@ -161,13 +162,13 @@ export default function lidar_project() {
             <div className="flex-1">
               <ul className="list-disc pl-5 mb-0 text-gray-800">
                 <li>
-                  A final-year engineering project for the **EcoCAR EV Challenge** to design and validate **front and rear mounts for LiDAR sensors** on a 2023 Cadillac Lyriq.
+                  A final-year engineering project for the <strong>EcoCAR EV Challenge</strong> to design and validate front and rear mounts for LiDAR sensors on a 2023 Cadillac Lyriq.
                 </li>
                 <li>
-                  The LiDAR is critical for the Connected and Autonomous Vehicle (CAV) team, providing **high-resolution, two-dimensional maps** for low-speed parking and environmental sensing during competition.
+                  The LiDAR is critical for the <strong>Connected and Autonomous Vehicle (CAV)</strong> team, providing high-resolution, two-dimensional maps for low-speed parking and environmental sensing during competition.
                 </li>
                 <li>
-                    The core challenge was to meet strict **functional and structural requirements** (e.g., **Field of View** ≥ 120°, **Mount Angle** ≤ 10°) while ensuring the mounts integrated with the vehicle's **premium aesthetic** and could be easily serviced.
+                    The core challenge was to meet strict <strong>functional and structural</strong> requirements (e.g., Field of View ≥ 120°, Mount Angle ≤ 10°) while ensuring the <strong>mounts integrated with the vehicle's premium aesthetic</strong> and could be easily serviced.
                 </li>
               </ul>
             </div>
@@ -224,16 +225,16 @@ export default function lidar_project() {
             <div className="flex-1">
               <ul className="list-disc pl-5 mb-0 text-gray-800">
                 <li>
-                  **Design Review & Iteration:** Rejected the legacy rear mount due to poor FOV and aesthetics. Developed four new sketches, ultimately selecting **Sketch #2** through a **Decision Matrix** for its optimal balance of manufacturability, FOV, and aesthetic integration.
+                <strong>Design Review & Iteration:</strong> Rejected the legacy rear mount due to poor FOV and aesthetics. Developed four new sketches, ultimately selecting Sketch #2 through a Decision Matrix for its optimal balance of manufacturability, FOV, and aesthetic integration.
                 </li>
                 <li>
-                  **Manufacturing Challenge & Redesign:** Faced challenges with the first rear mount CAD prototype which **failed multiple 3D print attempts** due to complexity. This forced a strategic redesign to a final **one-piece modular design** focused on simplified manufacturing and premium aesthetic integration.
+                  <strong>Manufacturing Challenge & Redesign:</strong> Faced challenges with the first rear mount CAD prototype which failed multiple 3D print attempts due to complexity. This forced a strategic redesign to a final <strong>one-piece modular design</strong> focused on simplified manufacturing and premium aesthetic integration.
                 </li>
                 <li>
-                  **Front Mount Optimization:** Modified the existing front mount design to allow for installation **without removing the front bumper**, significantly reducing the risk of damage and simplifying the integration process closer to competition.
+                  <strong>Front Mount Optimization:</strong> Modified the existing front mount design to allow for installation without removing the front bumper, significantly reducing the risk of damage and simplifying the integration process closer to competition.
                 </li>
                 <li>
-                  **Structural Validation (FEA):** Utilized ANSYS for a comprehensive **vibrational analysis** linking **Static Structural** (for bolt preload), **Modal Analysis** (for natural frequency), and **Random Vibration** testing (using GM specifications) to confirm structural integrity and prevent resonance failure.
+                  <strong>Structural Validation (FEA):</strong> Utilized <strong>ANSYS</strong> for a comprehensive <strong>vibrational analysis</strong> linking Static Structural (for bolt preload), Modal Analysis (for natural frequency), and Random Vibration testing (using GM specifications) to confirm structural integrity and prevent resonance failure.
                 </li>
               </ul>
             </div>
@@ -286,16 +287,16 @@ export default function lidar_project() {
             <div className="flex-1">
               <ul className="list-disc pl-5 mb-0 text-gray-800">
                 <li>
-                  **Validated Structural Integrity:** Both mounts passed the random vibration analysis. The front mount recorded a maximal stress of **0.148 MPa** and a modal frequency of **1305.4 Hz**. The rear mount recorded a maximal stress of **0.491 MPa** and a modal frequency of **575.05 Hz**, confirming a low risk of failure in operational conditions.
+                  <strong>Validated Structural Integrity:</strong> Both mounts passed the random vibration analysis. The front mount recorded a <strong>maximal stress of 0.148 MPa</strong> and a <strong>modal frequency of 1305.4 Hz</strong>. The rear mount recorded a <strong>maximal stress of 0.491 MPa</strong> and a <strong>modal frequency of 575.05 Hz</strong>, confirming a low risk of failure in operational conditions.
                 </li>
                 <li>
-                  **Product Design Success:** Delivered fully functional **one-piece** 3D-printed mounts that significantly improved **Field of View** and **service accessibility** compared to legacy designs.
+                  <strong>Product Design Success:</strong> Delivered fully functional one-piece 3D-printed mounts that significantly improved Field of View and service accessibility compared to previous ideas, while incoprating industrial deisgn for showcasing Cadillacs aesthetic.
                 </li>
                 <li>
-                  **Aesthetics & Finishing:** Successfully modified the vehicle's aesthetic elements, including the **cutting and polishing of the front bumper**, to achieve a premium, factory-integrated look for the final product.
+                  <strong>Aesthetics & Finishing:</strong> Successfully modified the vehicle's aesthetic elements, including the cutting and polishing of the front bumper, to achieve a premium, factory-integrated look for the final product.
                 </li>
                 <li>
-                    **Project Management & Learning:** Gained critical experience in managing a large-scale project under competition constraints, learning the value of **clear communication with stakeholders** to resolve design ambiguities (e.g., the 3-inch envelope rule) and efficiently allocating **resources** (e.g., 3D printing and simulation software).
+                    <strong>Project Management & Learning:</strong> Gained critical experience in managing a large-scale project under competition constraints, learning the value of clear communication with stakeholders to resolve design ambiguities (the 3-inch envelope rule) and efficiently allocating resources (3D printing and simulation software).
                 </li>
               </ul>
             </div>
@@ -333,6 +334,7 @@ export default function lidar_project() {
                   ))}
                 </div>
               )}
+            </div>
             </div>
         </section>
       </div>
