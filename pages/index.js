@@ -492,16 +492,16 @@ function Home() {
                     {/* Manually entered Work Card 3 */}
                     <div
                       className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-shadow"
-                      onClick={() => router.push("/work/Coater_pump")}
+                      onClick={() => router.push("/work/Lidar")}
                     >
                       <img
-                        src="/images/pump/assembly.png"
-                        alt="Coater Pump"
+                        src="/images/Lidar/car_pic.jpg"
+                        alt="Project Nine"
                         className="w-full h-80 object-cover"
                       />
                       <div className="p-6">
-                        <h2 className="text-2xl font-bold mb-2">Coater Pump</h2>
-                        <p className="text-gray-600 text-lg">Manufacturing/Mechanical Design</p>
+                        <h2 className="text-2xl font-bold mb-2">Cadillac LiDAR Design & Integration - UWAFT</h2>
+                        <p className="text-gray-600 text-lg">Product Design</p>
                       </div>
                     </div>
                     {/* Manually entered Work Card 4 */}
@@ -522,6 +522,21 @@ function Home() {
                     {/* Manually entered Work Card 5 */}
                     <div
                       className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-shadow"
+                      onClick={() => router.push("/work/Coater_pump")}
+                    >
+                      <img
+                        src="/images/pump/assembly.png"
+                        alt="Coater Pump"
+                        className="w-full h-80 object-cover"
+                      />
+                      <div className="p-6">
+                        <h2 className="text-2xl font-bold mb-2">Coater Pump</h2>
+                        <p className="text-gray-600 text-lg">Manufacturing/Mechanical Design</p>
+                      </div>
+                    </div>
+                    {/* Manually entered Work Card 6 */}
+                    <div
+                      className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-shadow"
                       onClick={() => router.push("/work/Vent_design")}
                     >
                       <img
@@ -534,7 +549,7 @@ function Home() {
                         <p className="text-gray-600 text-lg">HVAC Design</p>
                       </div>
                     </div>
-                    {/* Manually entered Work Card 6 */}
+                    {/* Manually entered Work Card 7 */}
                     <div
                       className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-shadow"
                       onClick={() => router.push("/work/Engine_Line_Development")}
@@ -549,7 +564,7 @@ function Home() {
                         <p className="text-gray-600 text-lg">Manufacturing</p>
                       </div>
                     </div>
-                    {/* Manually entered Work Card 7 */}
+                    {/* Manually entered Work Card 8 */}
                     <div
                       className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-shadow"
                       onClick={() => router.push("/work/hoodjig")}
@@ -564,7 +579,7 @@ function Home() {
                         <p className="text-gray-600 text-lg">Manufacturing Design</p>
                       </div>
                     </div>
-                    {/* Manually entered Work Card 8 */}
+                    {/* Manually entered Work Card 9 */}
                     <div
                       className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-shadow"
                       onClick={() => router.push("/work/mechafinger")}
@@ -576,21 +591,6 @@ function Home() {
                       />
                       <div className="p-6">
                         <h2 className="text-2xl font-bold mb-2"> MechaFinger - Work In Progress</h2>
-                        <p className="text-gray-600 text-lg">Product Design</p>
-                      </div>
-                    </div>
-                    {/* Manually entered Work Card 9 */}
-                    <div
-                      className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col cursor-pointer hover:shadow-2xl transition-shadow"
-                      onClick={() => router.push("/work/Motionmate")}
-                    >
-                      <img
-                        src="/images/motionmate/motionmatecad.png"
-                        alt="Project Nine"
-                        className="w-full h-80 object-cover"
-                      />
-                      <div className="p-6">
-                        <h2 className="text-2xl font-bold mb-2">MotionMate - Work In Progress</h2>
                         <p className="text-gray-600 text-lg">Product Design</p>
                       </div>
                     </div>
