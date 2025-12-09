@@ -3,7 +3,7 @@ import Header from "../../components/Header";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-export default function lidar_project() {
+export default function LidarProject() {
   const router = useRouter();
   const handleWorkScroll = () => {
     router.push('/?scrollTo=work');
@@ -97,7 +97,6 @@ export default function lidar_project() {
         <object
           data={src}
           type="application/pdf"
-          scrolling="no"
           className="block w-full border-0 outline-none"
           style={{ border: 'none', display: 'block', transform: 'translateY(-48px)', height: 'calc(100% + 48px)', overflow: 'hidden' }}
         >
@@ -168,7 +167,7 @@ export default function lidar_project() {
                   The LiDAR is critical for the <strong>Connected and Autonomous Vehicle (CAV)</strong> team, providing high-resolution, two-dimensional maps for low-speed parking and environmental sensing during competition.
                 </li>
                 <li>
-                    The core challenge was to meet strict <strong>functional and structural</strong> requirements (e.g., Field of View ≥ 120°, Mount Angle ≤ 10°) while ensuring the <strong>mounts integrated with the vehicle's premium aesthetic</strong> and could be easily serviced.
+                    The core challenge was to meet strict <strong>functional and structural</strong> requirements (e.g., Field of View ≥ 120°, Mount Angle ≤ 10°) while ensuring the <strong>mounts integrated with the vehicle&apos;s premium aesthetic</strong> and could be easily serviced.
                 </li>
               </ul>
             </div>
@@ -293,7 +292,7 @@ export default function lidar_project() {
                   <strong>Product Design Success:</strong> Delivered fully functional one-piece 3D-printed mounts that significantly improved Field of View and service accessibility compared to previous ideas, while incoprating industrial deisgn for showcasing Cadillacs aesthetic.
                 </li>
                 <li>
-                  <strong>Aesthetics & Finishing:</strong> Successfully modified the vehicle's aesthetic elements, including the cutting and polishing of the front bumper, to achieve a premium, factory-integrated look for the final product.
+                  <strong>Aesthetics & Finishing:</strong> Successfully modified the vehicle&apos;s aesthetic elements, including the cutting and polishing of the front bumper, to achieve a premium, factory-integrated look for the final product.
                 </li>
                 <li>
                     <strong>Project Management & Learning:</strong> Gained critical experience in managing a large-scale project under competition constraints, learning the value of clear communication with stakeholders to resolve design ambiguities (the 3-inch envelope rule) and efficiently allocating resources (3D printing and simulation software).
